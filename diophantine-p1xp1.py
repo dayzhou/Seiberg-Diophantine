@@ -86,7 +86,7 @@ def next_seq(lv, seq):
 def toRanges(seq):
     def _range(i, lv):
         if lv == 0 and i != 2:
-            return range(0, 21, 2)
+            return range(0, lvGap + 1, 2)
         else:
             return range(lvGap * lv + 2, lvGap * (lv + 1) + 1, 2)
     
